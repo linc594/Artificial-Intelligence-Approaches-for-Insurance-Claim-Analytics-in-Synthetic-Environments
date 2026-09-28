@@ -1,0 +1,30 @@
+42
+===== RL CLAIM COST EVALUATION =====
+Claim_MSE : 48547855557.5988
+Claim_MAE : 116381.9501
+Claim_RR  : 0.9801 (<1 成本更低, >1 成本更高)
+
+43
+===== RL CLAIM COST EVALUATION =====
+Claim_MSE : 49475163382.6117
+Claim_MAE : 112665.1567
+Claim_RR  : 0.8879 (<1 成本更低, >1 成本更高)
+44
+===== RL CLAIM COST EVALUATION =====
+Claim_MSE : 49208537161.2438
+Claim_MAE : 115130.1543
+Claim_RR  : 0.9308 (<1 成本更低, >1 成本更高)
+45
+===== RL CLAIM COST EVALUATION =====
+Claim_MSE : 49032419486.9810
+Claim_MAE : 118623.7610
+Claim_RR  : 1.0022 (<1 成本更低, >1 成本更高)
+46
+===== RL CLAIM COST EVALUATION =====
+Claim_MSE : 50010161236.1701
+Claim_MAE : 118710.4464
+Claim_RR  : 0.9761 (<1 成本更低, >1 成本更高)
+
+Claim_MSE: mean=4.92548e+10, std=5.40947e+08
+Claim_MAE: mean=116302, std=2539.56
+Claim_RR: mean=0.95542, std=0.0457991

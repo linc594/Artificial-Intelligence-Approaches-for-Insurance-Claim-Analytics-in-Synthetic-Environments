@@ -1,0 +1,33 @@
+1
+===== RL Claim Delay Evaluation =====
+MSE: 2.611970
+MAE: 0.924464
+RR : 1.482061
+
+2
+===== RL Claim Delay Evaluation =====
+MSE: 2.623710
+MAE: 0.934002
+RR : 1.460384
+
+3
+===== RL Claim Delay Evaluation =====
+MSE: 2.598244
+MAE: 0.911009
+RR : 1.509131
+
+4
+===== RL Claim Delay Evaluation =====
+MSE: 2.609795
+MAE: 0.921347
+RR : 1.492428
+5
+===== RL Claim Delay Evaluation =====
+MSE: 2.598842
+MAE: 0.911418
+RR : 1.505563
+
+
+Claim_MSE: mean=2.60851, std=0.01053
+Claim_MAE: mean=0.920448, std=0.00963435
+Claim_RR: mean=1.48991, std=0.0197116

@@ -1,0 +1,9 @@
+Claim_MSE: mean=8.40165e+10, std=1.73697e+10
+Claim_MAE: mean=175128, std=29642.7
+Claim_RR: mean=0.97436, std=0.29424
+Pay_MSE: mean=7.13768e+08, std=3.12359e+08
+Pay_MAE: mean=4348.76, std=567.147
+Pay_RR: mean=1.10886, std=0.0942008
+Delay_MSE: mean=0.122494, std=0.00774294
+Delay_MAE: mean=0.228885, std=0.0077849
+Delay_RR: mean=0.976798, std=0.0205797

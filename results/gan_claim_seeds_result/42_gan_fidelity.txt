@@ -1,0 +1,166 @@
+44 result
+======================================================================
+Synthetic claim preview
+======================================================================
+      claim_no  occurrence_period  occurrence_time    claim_size   notidel    setldel  no_payment
+0  syn_claim_0          10.854202        10.898305  9.591362e+05  1.423981  18.745750   18.963205
+1  syn_claim_1          18.051044        17.246351  6.600832e+05  1.392252  21.131401   12.700210
+2  syn_claim_2           3.541165         2.534938  1.820787e+05  2.607636   9.548013    5.002863
+3  syn_claim_3          24.262001        23.503574  5.379482e+05  3.225968  23.016056    9.925488
+4  syn_claim_4          22.415522        20.531954  1.452332e+05  1.118658   3.283034    3.426186
+5  syn_claim_5          14.157739        13.851653  6.042988e+04  1.373762   5.594845    6.999466
+6  syn_claim_6           4.551630         4.097160  1.012547e+06  1.193589  34.634632    5.142674
+7  syn_claim_7          21.039890        20.298185  2.675421e+04  2.101462   3.429928    3.336014
+8  syn_claim_8          19.827013        18.633669  2.370871e+04  6.144216   4.074431    2.703833
+9  syn_claim_9          24.059525        23.294432  6.810404e+05  1.928865  40.018185    4.898571
+
+======================================================================
+Synthetic data validity diagnostics
+======================================================================
+claim_size: 0.0000% negative
+notidel: 0.0828% negative
+setldel: 0.1118% negative
+
+Synthetic claims saved:
+C:\Users\24495\Desktop\experiment\data\train data\synthetic_claims_gan_v2.csv
+
+======================================================================
+GAN fidelity analysis
+======================================================================
+            variable      real_mean  synthetic_mean       real_std  \
+0  occurrence_period      13.804636       13.137725       7.616637   
+1    occurrence_time      13.304205       12.174431       7.624912   
+2         claim_size  167033.202820   352439.312500  252327.310765   
+3            notidel       2.137368        2.560355       1.617683   
+4            setldel       9.809904       10.845952       8.481402   
+5         no_payment       5.291763        4.988230       3.089453   
+
+   synthetic_std   real_min  synthetic_min      real_max  synthetic_max  \
+0       7.298124   1.000000      -2.611155  2.700000e+01   2.994000e+01   
+1       7.177877   0.000160      -4.106634  2.699869e+01   2.883549e+01   
+2  646876.375000  30.052808      29.335653  4.624005e+06   2.613801e+07   
+3       1.752747   0.000022      -0.212665  1.375710e+01   1.940559e+01   
+4       9.335413   0.007794      -0.320349  6.661895e+01   9.570202e+01   
+5       3.087006   1.000000      -0.872358  3.300000e+01   3.262070e+01   
+
+   ks_statistic      ks_pvalue  real_negative_pct  synthetic_negative_pct  \
+0      0.074545   7.981066e-59                0.0                0.004512   
+1      0.084685   8.106313e-76                0.0                0.013825   
+2      0.164735  5.921503e-287                0.0                0.000000   
+3      0.124545  8.873213e-164                0.0                0.000828   
+4      0.056581   4.679481e-34                0.0                0.001118   
+5      0.288411   0.000000e+00                0.0                0.001738   
+
+     real_q01  synthetic_q01     real_q05  synthetic_q05      real_q25  \
+0    1.000000       0.681725     2.000000       2.279444      7.000000   
+1    0.269882      -0.321845     1.398308       1.374549      6.685057   
+2  231.735349     810.059871  2331.871410    4298.034302  24067.487549   
+3    0.088741       0.286934     0.273612       0.599226      0.934163   
+4    0.224625       0.332599     0.630756       0.819881      3.270834   
+5    1.000000       0.581395     1.000000       1.384845      4.000000   
+
+   synthetic_q25      real_q50  synthetic_q50       real_q75  synthetic_q75  \
+0       6.417147     14.000000      13.266462      20.000000      19.722611   
+1       5.605469     13.341608      12.415693      19.901622      18.652775   
+2   45428.969727  77870.614050  144337.453125  206597.555802  411664.976562   
+3       1.307540      1.761254       2.126269       2.916130       3.364653   
+4       3.443075      7.703650       8.735502      14.016255      15.721880   
+5       3.395646      5.000000       4.082834       6.000000       6.009862   
+
+        real_q90  synthetic_q90       real_q95  synthetic_q95      real_q99  \
+0      24.000000      22.777068      26.000000   2.408249e+01  2.700000e+01   
+1      23.797166      21.519827      25.286360   2.282741e+01  2.662168e+01   
+2  427697.040869  894670.875000  627709.187343   1.366851e+06  1.176806e+06   
+3       4.338681       4.869623       5.317050   5.974556e+00  7.433974e+00   
+4      21.437619      23.158295      26.511135   2.852317e+01  3.715112e+01   
+5       9.000000       8.777994      11.000000   1.091506e+01  1.700000e+01   
+
+   synthetic_q99  
+0   2.618776e+01  
+1   2.480564e+01  
+2   2.739911e+06  
+3   8.467849e+00  
+4   4.118672e+01  
+5   1.675494e+01  
+
+Fidelity report saved:
+C:\Users\24495\Desktop\experiment\data\train data\claim_gan_fidelity_v2.csv
+
+======================================================================
+1:1 GAN augmentation
+======================================================================
+Original train: 24160
+Synthetic: 24160
+Augmented train: 48320
+
+Augmented training data saved:
+C:\Users\24495\Desktop\experiment\data\train data\train_claims_gan_augmented_v2.csv
+
+======================================================================
+LightGBM downstream prediction
+======================================================================
+
+Training subset: 43488
+Validation subset: 4832
+Test set: 12080
+[LightGBM] [Info] Auto-choosing row-wise multi-threading, the overhead of testing was 0.000111 seconds.
+You can set `force_row_wise=true` to remove the overhead.
+And if memory is not enough, you can set `force_col_wise=true`.
+[LightGBM] [Info] Total Bins 1275
+[LightGBM] [Info] Number of data points in the train set: 43488, number of used features: 5
+[LightGBM] [Info] Start training from score 259207.957764
+Training until validation scores don't improve for 50 rounds
+[50]    valid_0's l2: 1.44822e+11
+[100]   valid_0's l2: 1.37217e+11
+[150]   valid_0's l2: 1.35992e+11
+[200]   valid_0's l2: 1.34516e+11
+[250]   valid_0's l2: 1.33908e+11
+[300]   valid_0's l2: 1.33269e+11
+[350]   valid_0's l2: 1.3306e+11
+Early stopping, best iteration is:
+[342]   valid_0's l2: 1.32921e+11
+
+======================================================================
+FINAL TEST RESULTS
+======================================================================
+MSE  : 49816757434.500084
+RMSE : 223196.678816
+MAE  : 115037.856138
+RR   : 0.960239
+
+Prediction file saved:
+C:\Users\24495\Desktop\experiment\data\test data\claim_gan_predictions_v2.csv
+
+======================================================================
+PIPELINE SUMMARY
+======================================================================
+Original training claims: 24160
+Synthetic claims: 24160
+Augmented training claims: 48320
+Test claims: 12080
+
+GAN features:
+  - occurrence_period
+  - occurrence_time
+  - claim_size
+  - notidel
+  - setldel
+  - no_payment
+
+Log-transformed features:
+  - claim_size
+  - notidel
+  - setldel
+
+Raw-scale features:
+  - occurrence_period
+  - occurrence_time
+  - no_payment
+
+no_payment:
+  - no rounding
+  - no clipping
+
+Synthetic data are generated directly by the GAN and merged 1:1 with the original training data.
+
+Pipeline completed successfully.
